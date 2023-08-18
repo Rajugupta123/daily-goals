@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "roboto",sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+nav{
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font: 100 1.3rem "roboto";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    background-color: rgba(255,255,255);
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.header > a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+.container{
+    background-color: rgba(223, 226, 229, 0.542);
+    width: 70%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 4vmax 8vmax;
+    min-height: 100vh;
+    
+}
+.container > h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px;
+}
+.container > form{
+    display: flex;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input,textarea,button{
+    padding: 12px;
+    margin: 5px 0px;
+    font-size: 1.2rem;
+    outline: none;
+    border:1px solid rgba(128, 122, 122, 0.571)
+}
+button{
+    border: none;
+    /* width: 20%; */
+    outline: none;
+    background-color: rgb(45, 40, 40);
+    cursor: pointer;
+    /* margin: auto; */
+    color: white;
+    font: 100 1.3rem "roboto";
+    padding: 0.5vmax;
+    border-radius: 7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task{
+    display: flex;
+    align-items: center;
+    background-color: rgba(226, 227, 236, 0.648);
+    font-size: 1.5rem;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 7px;
+   
+}
+.task > div{
+    width: 100%;
+}
+.task > button{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task > button:hover{
+    background-color: crimson;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.about{
+    background-color: rgb(73, 143, 85);
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.contact{
+    background-color: rgb(68, 110, 96);
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user{
+    background-color: rgb(38, 50, 15);
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+.footer{
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    padding-top: 10px;
 }
